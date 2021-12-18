@@ -1,6 +1,8 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
+// Le Container contient le template de la grille du site
+// Chaque style de Div ensuite déclarés ont la propriétés grid-area qui gère leurs positions
 export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -27,7 +29,7 @@ export const Div1 = styled.div`
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
+  grid-area: 1 / 3 / 4 / 5 ;
   display: flex;
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -43,6 +45,11 @@ export const Div3 = styled.div`
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
   }
+`;
+
+// Span
+export const Span  = styled.span`
+  font-size: 2rem;
 `;
 
 // Navigation Links
@@ -109,7 +116,6 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 
 
 // Social Icons 
-
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
 color: white;
