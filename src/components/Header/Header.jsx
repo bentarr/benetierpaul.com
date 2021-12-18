@@ -7,7 +7,41 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyle
   
 const Header = () =>  (
   <Container>
-    
+    <Div1>
+      <Link href="/">
+        <a>
+          <DiCssdeck size="3rem"/> <span>Portfolio</span>
+        </a>
+      </Link>
+    </Div1>
+
+    <Div2>
+      <li>
+        <Link href="#about">
+          <NavLink> À propos </NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="#projects">
+          <NavLink> Projets </NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="#tech">
+          <NavLink> Technologies </NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="#avis">
+          <NavLink> Avis </NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="#contact">
+          <NavLink> Contact </NavLink>
+        </Link>
+      </li>
+    </Div2>  
   </Container>
 );
 
