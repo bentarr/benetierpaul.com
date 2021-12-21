@@ -16,7 +16,7 @@ import Button from '../../styles/GlobalComponents/Button';
 const Contact = () => {
   return (
 
-    <Section id="contact">
+    <ContactSection id="contact">
       <LeftSection >
         <SectionTitle>Contact</SectionTitle>
           <SectionText>
@@ -25,7 +25,7 @@ const Contact = () => {
       
         
 
-        <ContactSection>
+        
           <Icons>
             <SocialIcons href="https://www.linkedin.com/in/paul-benetier/">
               <AiFillLinkedin size="3rem"/>
@@ -55,7 +55,6 @@ const Contact = () => {
             <Button>Me contacter</Button>
 
           </Form>
-        </ContactSection>
         
         
         
@@ -63,7 +62,7 @@ const Contact = () => {
       
 
       
-    </Section>
+    </ContactSection>
     
     // <ContactSection id="contact">
     //   <Title>Get in touch</Title>

@@ -6,6 +6,5 @@ export const DivAnimation = styled.div`
         position: absolute;
         display: flex; 
         right: -6rem;
-
     }
 `;
