@@ -1,22 +1,37 @@
 import Facebook from "../../assets/facebook-square-brands.svg";
-import LinkedId from "../../assets/linkedin-brands.svg";
+import LinkedIn from "../../assets/linkedin.svg";
 import Twitter from "../../assets/twitter-square-brands.svg";
 import Instagram from "../../assets/instagram-square-brands.svg";
 
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+
 import {ContactSection, Title, Icons, Form, Row} from './ContactStyles';
+import { SocialIcons, Div3 } from '../Header/HeaderStyles';
+
 
 const Contact = () => {
   return (
     <ContactSection id="contact">
       <Title>Get in touch</Title>
       {/* <Text>Lorem ipsum dolor sit amet, consectetur adipisicing.</Text> */}
+
+      <Div3>
+        <SocialIcons href="https://www.linkedin.com/in/paul-benetier/">
+          <AiFillLinkedin size="3rem"/>
+        </SocialIcons>
+        <SocialIcons href="https://github.com/bentarr">
+          <AiFillGithub size="3rem"/>
+        </SocialIcons>
+      </Div3>
+
+
       <Icons>
         <a href="https://www.facebook.com/">
           {" "}
           <img src={Facebook} alt="Facebook" />
         </a>
         <a href="https://www.linkedin.com//">
-          <img src={LinkedId} alt="LinkedId" />
+          <img src={LinkedIn} alt="LinkedId" />
         </a>
         <a href="https://twitter.com/">
           <img src={Twitter} alt="Twitter" />
