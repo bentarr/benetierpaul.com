@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ContactSection = styled.section`
-  width: 100vw;
   padding: calc(2.5rem + 2.5vw) 0;
   ${'' /* background-color: #0a0b10; */}
   display: flex;
@@ -33,21 +32,6 @@ export const Title = styled.h1`
 export const Icons = styled.div`
   display: flex;
   margin-bottom: 3rem;
-  a {
-    &:hover {
-      img {
-        filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(580deg)
-          brightness(100%) contrast(97%);
-      }
-    }
-    &:not(:last-child) {
-      margin-right: 2rem;
-    }
-    img {
-      width: 3rem;
-      height: 3rem;
-    }
-  }
 `;
 
 export const Form = styled.form`

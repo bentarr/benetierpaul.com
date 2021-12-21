@@ -23,12 +23,15 @@ const Contact = () => {
       </SectionText>
 
       <ContactSection>
-        <SocialIcons href="https://www.linkedin.com/in/paul-benetier/">
-          <AiFillLinkedin size="3rem"/>
-        </SocialIcons>
-        <SocialIcons href="https://github.com/bentarr">
-          <AiFillGithub size="3rem"/>
-        </SocialIcons>
+        <Icons>
+          <SocialIcons href="https://www.linkedin.com/in/paul-benetier/">
+            <AiFillLinkedin size="3rem"/>
+          </SocialIcons>
+          <SocialIcons href="https://github.com/bentarr">
+            <AiFillGithub size="3rem"/>
+          </SocialIcons>
+        </Icons>
+        
         <Form>
           <Row>
             <input name="name" type="text" placeholder="your name" />
