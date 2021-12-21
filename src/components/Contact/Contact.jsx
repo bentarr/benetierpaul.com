@@ -3,34 +3,34 @@ import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import { useContext, useRef, useState } from "react";
-import emailjs from "emailjs-com";
-import { ThemeContext } from "../../context";
+// // import emailjs from "emailjs-com";
+// import { ThemeContext } from "../../context";
 
 const Contact = () => {
-  const formRef = useRef();
-  const [done, setDone] = useState(false)
-  const theme = useContext(ThemeContext);
-  const darkMode = theme.state.darkMode;
+//   const formRef = useRef();
+//   const [done, setDone] = useState(false)
+//   const theme = useContext(ThemeContext);
+//   const darkMode = theme.state.darkMode;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_rrvnzco",
-        "template_3v5nih4",
-        formRef.current,
-        "user_DrriDPTGKO2Zj4RDXCA6W"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true)
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     emailjs
+//       .sendForm(
+//         "service_rrvnzco",
+//         "template_3v5nih4",
+//         formRef.current,
+//         "user_DrriDPTGKO2Zj4RDXCA6W"
+//       )
+//       .then(
+//         (result) => {
+//           console.log(result.text);
+//           setDone(true)
+//         },
+//         (error) => {
+//           console.log(error.text);
+//         }
+//       );
+//   };
 
   return (
     <div className="c">
