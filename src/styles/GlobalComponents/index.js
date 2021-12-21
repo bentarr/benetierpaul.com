@@ -168,7 +168,7 @@ export const SecondaryBtn = styled.button`
 `
 
 export const ButtonBack = styled.div`
-  width: ${({ alt }) => alt ? '150px' : '262px'};
+  width: ${({ alt }) => alt ? '100px' : '300px'};
   height: ${({ alt }) => alt ? '52px' : '64px'};
   border-radius: 50px;
   font-size: ${({ alt }) => alt ? '20px' : '24px'};

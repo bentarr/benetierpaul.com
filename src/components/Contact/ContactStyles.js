@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const ContactSection = styled.section`
-  padding: calc(2.5rem + 2.5vw) 0;
+  padding: calc(0rem + 2.5vw) 0;
+  margin-top: -40px; 
   ${'' /* background-color: #0a0b10; */}
   display: flex;
   flex-direction: column;
@@ -14,7 +15,7 @@ export const Title = styled.h1`
   color: var(--white);
   display: inline-block;
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   position: relative;
   &::before {
     content: "";
@@ -41,7 +42,7 @@ export const Form = styled.form`
   input {
     padding: 1rem calc(0.5rem + 1vw);
     margin-bottom: 1rem;
-    background-color: var(--nav2);
+    background-color: #6b3030; 
     border: none;
     border-radius: 4px;
     color: #eff7f8;
