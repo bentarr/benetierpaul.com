@@ -42,7 +42,7 @@ export const Form = styled.form`
   input {
     padding: 1rem calc(0.5rem + 1vw);
     margin-bottom: 1rem;
-    background-color: #6b3030; 
+    background-color: #6b3030;
     border: none;
     border-radius: 4px;
     color: #eff7f8;
@@ -63,14 +63,24 @@ export const Form = styled.form`
   textarea {
     padding: 1rem calc(0.5rem + 1vw);
     margin-bottom: 1rem;
+    height: 10rem;
+    width: 52rem;
     background-color: var(--nav2);
-    border: none;
-    border-radius: 4px;
+    border: 3px solid #6B3030;
+    border-radius: 8px;
+    resize:none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
     color: #eff7f8;
     margin-bottom: 2rem;
     &:focus,
     &:active {
       background-color: var(--nav);
+      border:none;
+      outline: solid 2px #fff;
     }
     &::placeholder {
       color: #eff7f8;
