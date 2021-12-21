@@ -7,10 +7,10 @@ import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 
 import {ContactSection, Title, Icons, Form, Row} from './ContactStyles';
+import { LeftSection } from '../Hero/HeroStyles';
 import { Section, SectionDivider, SectionTitle, SectionText } from '../../styles/GlobalComponents';
 import { SocialIcons, Div3 } from '../Header/HeaderStyles';
 import Button from '../../styles/GlobalComponents/Button';
-
 
 
 const Contact = () => {
@@ -18,41 +18,48 @@ const Contact = () => {
 
     <Section id="contact">
       <SectionTitle>Contact</SectionTitle>
-      <SectionText>
-        Contactez-moi mes loups. 
-      </SectionText>
-
-      <ContactSection>
-        <Icons>
-          <SocialIcons href="https://www.linkedin.com/in/paul-benetier/">
-            <AiFillLinkedin size="3rem"/>
-          </SocialIcons>
-          <SocialIcons href="https://github.com/bentarr">
-            <AiFillGithub size="3rem"/>
-          </SocialIcons>
-        </Icons>
+        <SectionText>
+          Contactez-moi mes loups. 
+        </SectionText>
+      {/* <LeftSection > */}
         
-        <Form>
-          <Row>
-            <input name="name" type="text" placeholder="your name" />
-            <input
-              name="email"
-              type="email"
-              placeholder="enter working email id"
-            />
-          </Row>
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="2"
-            placeholder="your message"
-          ></textarea>
-          
-          <Button>Me contacter</Button>
-          
-        </Form>
-      </ContactSection>
+
+        <ContactSection>
+          <Icons>
+            <SocialIcons href="https://www.linkedin.com/in/paul-benetier/">
+              <AiFillLinkedin size="3rem"/>
+            </SocialIcons>
+            <SocialIcons href="https://github.com/bentarr">
+              <AiFillGithub size="3rem"/>
+            </SocialIcons>
+          </Icons>
+
+          <Form>
+            <Row>
+              <input name="name" type="text" placeholder="your name" />
+              <input
+                name="email"
+                type="email"
+                placeholder="enter working email id"
+              />
+            </Row>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+              placeholder="your message"
+            ></textarea>
+
+            <Button>Me contacter</Button>
+
+          </Form>
+        </ContactSection>
+        
+        
+        
+      {/* </LeftSection> */}
+      
 
       
     </Section>
