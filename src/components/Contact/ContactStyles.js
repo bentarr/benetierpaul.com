@@ -41,8 +41,8 @@ export const Form = styled.form`
   justify-content: center;
   input {
     padding: 1rem calc(0.5rem + 1vw);
-    margin-bottom: 1rem;
-    background-color: #6b3030;
+    margin-bottom: 3rem;
+    background: linear-gradient(270deg, rgba(15,22,36,1) 0%, rgba(32,27,38,1) 8%, rgba(87,43,45,1) 88%, rgba(107,48,48,1) 100%, rgba(107,48,48,1) 100%);
     border: none;
     border-radius: 4px;
     color: #eff7f8;
@@ -50,7 +50,7 @@ export const Form = styled.form`
     &:focus {
       border: none;
       outline: none;
-      background-color: var(--nav);
+      background: none;
     }
     &::placeholder {
       color: #eff7f8;
@@ -78,9 +78,8 @@ export const Form = styled.form`
     margin-bottom: 2rem;
     &:focus,
     &:active {
-      background-color: var(--nav);
-      border:none;
-      outline: solid 2px #fff;
+        background: linear-gradient(270deg, rgba(15,22,36,1) 0%, rgba(32,27,38,1) 8%, rgba(87,43,45,1) 88%, rgba(107,48,48,1) 100%, rgba(107,48,48,1) 100%);
+        border:none;
     }
     &::placeholder {
       color: #eff7f8;
