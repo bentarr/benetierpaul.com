@@ -9,6 +9,8 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import {ContactSection, Title, Icons, Form, Row} from './ContactStyles';
 import { Section, SectionDivider, SectionTitle, SectionText } from '../../styles/GlobalComponents';
 import { SocialIcons, Div3 } from '../Header/HeaderStyles';
+import Button from '../../styles/GlobalComponents/Button';
+
 
 
 const Contact = () => {
@@ -43,15 +45,9 @@ const Contact = () => {
             rows="2"
             placeholder="your message"
           ></textarea>
-          <div style={{ margin: "0 auto" }}>
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-              }}
-            >
-              Submit
-            </button>
-          </div>
+          
+          <Button>Me contacter</Button>
+          
         </Form>
       </ContactSection>
 

@@ -96,10 +96,9 @@ export const Form = styled.form`
     padding: 0.8rem 2rem;
     background-color: var(--white);
     border-radius: 20px;
-    font-size: 1.2rem;
-    color: #0a0b10;
+    font-size: 1.5rem;
+    color: #ffff;
     cursor: pointer;
-    transition: transform 0.3s;
     &:hover {
       transform: scale(1.1);
     }
