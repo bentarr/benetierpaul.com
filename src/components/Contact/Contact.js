@@ -17,11 +17,12 @@ const Contact = () => {
   return (
 
     <Section id="contact">
-      <SectionTitle>Contact</SectionTitle>
-        <SectionText>
-          Contactez-moi mes loups. 
-        </SectionText>
-      {/* <LeftSection > */}
+      <LeftSection >
+        <SectionTitle>Contact</SectionTitle>
+          <SectionText>
+            Contactez-moi mes loups. 
+          </SectionText>
+      
         
 
         <ContactSection>
@@ -58,7 +59,7 @@ const Contact = () => {
         
         
         
-      {/* </LeftSection> */}
+      </LeftSection>
       
 
       
