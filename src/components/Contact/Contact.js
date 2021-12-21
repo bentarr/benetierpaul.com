@@ -4,8 +4,6 @@ import Twitter from "../../assets/twitter-square-brands.svg";
 import Instagram from "../../assets/instagram-square-brands.svg";
 
 import {ContactSection, Title, Icons, Form, Row} from './ContactStyles';
-// const TextBlock = lazy(() => import("../../components/TextBlock"));
-// const SvgBlock = lazy(() => import("../../components/SvgBlock"));
 
 const Contact = () => {
   return (

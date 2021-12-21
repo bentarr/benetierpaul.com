@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ContactSection = styled.section`
+export const ContactSection = styled.section`
   width: 100vw;
   padding: calc(2.5rem + 2.5vw) 0;
   background-color: #0a0b10;
@@ -11,7 +11,7 @@ const ContactSection = styled.section`
   justify-content: center;
 `;
 
-const Title = styled.h1`
+export const Title = styled.h1`
   color: var(--white);
   display: inline-block;
   font-size: 2rem;
@@ -30,7 +30,7 @@ const Title = styled.h1`
   }
 `;
 
-const Icons = styled.div`
+export const Icons = styled.div`
   display: flex;
   margin-bottom: 3rem;
   a {
@@ -50,7 +50,7 @@ const Icons = styled.div`
   }
 `;
 
-const Form = styled.form`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,7 +109,7 @@ const Form = styled.form`
   }
 `;
 
-const Row = styled.div`
+export const Row = styled.div`
   @media only Screen and (max-width: 40em) {
     display: flex;
     flex-direction: column;
