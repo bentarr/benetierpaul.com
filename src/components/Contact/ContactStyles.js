@@ -33,12 +33,14 @@ export const Title = styled.h1`
 export const Icons = styled.div`
   display: flex;
   margin-bottom: 3rem;
+  margin-top: -1rem;
 `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: -1rem;
   input {
     padding: 1rem calc(0.5rem + 1vw);
     margin-bottom: 3rem;
@@ -48,13 +50,15 @@ export const Form = styled.form`
     color: #eff7f8;
     &:active,
     &:focus {
-      border: none;
+      border: 2px solid #6B3030;
+      border-radius: 4px;
       outline: none;
-      background: none;
+      background:none; 
     }
     &::placeholder {
       color: #eff7f8;
-      opacity: 0.6;
+      opacity: 0.7;
+      font-weight: 500;
     }
     &[name="name"] {
       margin-right: 2rem;
@@ -63,11 +67,11 @@ export const Form = styled.form`
   textarea {
     padding: 1rem calc(0.5rem + 1vw);
     margin-bottom: 1rem;
-    height: 10rem !important;
-    width: 52rem;
-    background-color: var(--nav2);
-    border: 3px solid #6B3030;
-    border-radius: 8px;
+    height: 21 rem !important;
+    width: 55rem;
+    border:none;
+    border-radius: 4px;
+    background: linear-gradient(270deg, rgba(15,22,36,1) 0%, rgba(32,27,38,1) 8%, rgba(87,43,45,1) 88%, rgba(107,48,48,1) 100%, rgba(107,48,48,1) 100%);
     resize:none;
     overflow: auto;
     outline: none;
@@ -79,12 +83,15 @@ export const Form = styled.form`
     margin-bottom: 2rem;
     &:focus,
     &:active {
-        background: linear-gradient(270deg, rgba(15,22,36,1) 0%, rgba(32,27,38,1) 8%, rgba(87,43,45,1) 88%, rgba(107,48,48,1) 100%, rgba(107,48,48,1) 100%);
-        border:none;
+      border: 2px solid #6B3030;
+      border-radius: 4px;
+      outline: none;
+      background:none; 
     }
     &::placeholder {
       color: #eff7f8;
-      opacity: 0.6;
+      opacity: 0.7;
+      font-weight: 500;
     }
   }
   button {

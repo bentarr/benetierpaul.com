@@ -9,6 +9,7 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import TextareaAutosize from 'react-textarea-autosize';
 
 
+
 import {ContactSection, Title, Icons, Form, Row} from './ContactStyles';
 import { LeftSection } from '../Hero/HeroStyles';
 import { Section, SectionDivider, SectionTitle, SectionText } from '../../styles/GlobalComponents';
@@ -25,10 +26,7 @@ const Contact = () => {
           <SectionText>
             Contactez-moi mes loups. 
           </SectionText>
-      
-        
 
-        
           <Icons>
             <SocialIcons href="https://www.linkedin.com/in/paul-benetier/">
               <AiFillLinkedin size="3rem"/>
@@ -40,37 +38,31 @@ const Contact = () => {
 
           <Form>
             <Row>
-              <input name="name" type="text" placeholder="your name" />
+              <input 
+                name="name" 
+                type="text" placeholder="Votre nom ?" 
+                autocomplete="off" 
+              />
               <input
                 name="email"
                 type="email"
-                placeholder="enter working email id"
+                placeholder="Votre e-mail ?"
+                autocomplete="off"
               />
             </Row>
             <TextareaAutosize 
               name=""
               id=""
+              minRows="5"
               cols="30"
               rows="5"
-              placeholder="your message"
-              minRows="5"
-
-
+              placeholder="Quelle est votre demande ? "
             />
-
-
             <Button>Me contacter</Button>
-
           </Form>
         
-        
-        
-      </LeftSection>
-      
-
-      
-    </ContactSection>
-    
+      </LeftSection> 
+    </ContactSection> 
   );
 };
 

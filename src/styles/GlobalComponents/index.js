@@ -178,8 +178,7 @@ export const ButtonBack = styled.div`
   justify-content: center;
   margin: ${({ alt, form }) => (alt || form) ? '0' : '0 0 80px'};
   color: #fff;
-  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)' : 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
-  cursor: pointer;
+  background: linear-gradient(270deg, rgba(15,22,36,1) 0%, rgba(32,27,38,1) 8%, rgba(87,43,45,1) 88%, rgba(107,48,48,1) 100%, rgba(107,48,48,1) 100%);
   transition: 0.5s ease;
   position: relative;
   overflow: hidden;
@@ -210,7 +209,7 @@ export const ButtonFront = styled.button`
   left: 0;
   width: 100%;
   height: 100%;
-  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+  background: linear-gradient(270deg, rgba(15,22,36,1) 0%, rgba(32,27,38,1) 8%, rgba(87,43,45,1) 88%, rgba(107,48,48,1) 100%, rgba(107,48,48,1) 100%);
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
   transition: .4s ease;
   font-size: ${({ alt }) => alt ? '20px' : '24px'};
