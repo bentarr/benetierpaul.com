@@ -6,6 +6,9 @@
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 
+import TextareaAutosize from 'react-textarea-autosize';
+
+
 import {ContactSection, Title, Icons, Form, Row} from './ContactStyles';
 import { LeftSection } from '../Hero/HeroStyles';
 import { Section, SectionDivider, SectionTitle, SectionText } from '../../styles/GlobalComponents';
@@ -44,13 +47,17 @@ const Contact = () => {
                 placeholder="enter working email id"
               />
             </Row>
-            <textarea
+            <TextareaAutosize 
               name=""
               id=""
               cols="30"
-              rows="2"
+              rows="5"
               placeholder="your message"
-            ></textarea>
+              minRows="5"
+
+
+            />
+
 
             <Button>Me contacter</Button>
 
