@@ -43,7 +43,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id="about">
+    <Section nopadding id="about">
       <SectionTitle>A propos</SectionTitle>
       <SectionText>
         Salut je m'appelle Paul Benetier et on va créer une timeline ensemble.
@@ -109,7 +109,7 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
-      <SectionDivider></SectionDivider>
+      <SectionDivider/>
     </Section>
   );
 };
