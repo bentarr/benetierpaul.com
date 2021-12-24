@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
+import Projects from '../Projects/Projects';
 import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
@@ -14,7 +15,7 @@ const Hero = (props) => (
       <SectionText>
         Le but de mon site est de montrer mes différentes réalisations et ainsi de vous proposer mes services dans vos projets de création sur Internet. 
       </SectionText>
-      <Button onClick={() => window.location = 'https://google.com'}>En voir plus</Button>
+      <Button onClick={() => window.location ='#projects'}>En voir plus</Button>
     </LeftSection>
   </Section>
 );
