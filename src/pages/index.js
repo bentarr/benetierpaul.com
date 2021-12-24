@@ -11,14 +11,13 @@ import { Section } from '../styles/GlobalComponents';
 const Home = () => {
   return (
     <Layout>
-          <Hero />
-      <Projects />
+      <Hero />
       <Timeline />
-      <Section grid>
+      <Projects />
+      <Section nopadding grid>
           <Contact />
           <BgAnimation /> 
       </Section> 
-      
     </Layout>
   );
 };

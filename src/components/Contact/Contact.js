@@ -1,8 +1,3 @@
-// import Facebook from "../../assets/facebook-square-brands.svg";
-// import LinkedIn from "../../assets/linkedin.svg";
-// import Twitter from "../../assets/twitter-square-brands.svg";
-// import Instagram from "../../assets/instagram-square-brands.svg";
-
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 
@@ -19,10 +14,9 @@ import Button from '../../styles/GlobalComponents/Button';
 
 const Contact = () => {
   return (
-
-    <ContactSection id="contact">
+    <ContactSection nopadding id="contact">
       <LeftSection >
-        <SectionTitle>Contact</SectionTitle>
+        <SectionTitle main>Contact</SectionTitle>
           <SectionText>
             Contactez-moi mes loups. 
           </SectionText>

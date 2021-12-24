@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactSection = styled.section`
-  padding: calc(0rem + 2.5vw) 0;
+a
   margin-top: -40px; 
   ${'' /* background-color: #0a0b10; */}
   display: flex;
@@ -9,6 +9,19 @@ export const ContactSection = styled.section`
   /* justify-content: center; */
   align-items: center;
   justify-content: center;
+  padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" };
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
+
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.h1`

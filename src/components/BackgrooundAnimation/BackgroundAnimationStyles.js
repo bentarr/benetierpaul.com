@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const DivAnimation = styled.div`
     svg{
-        width: 50rem;
+        width: 45rem;
         position: absolute;
         display: flex; 
-        right: -4rem;
-        top: -1rem;
+        right: -5rem;
+        top: 4rem;
     }
 `;
