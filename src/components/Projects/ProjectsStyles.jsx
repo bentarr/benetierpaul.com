@@ -1,5 +1,8 @@
 import styled from 'styled-components';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4abc6fd9f78e1a2e869ba156fb8992fcf554dc8a
 //test
 export const Img = styled.img`
   width:100%;
