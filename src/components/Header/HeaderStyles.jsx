@@ -45,8 +45,6 @@ export const Div3 = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
-  }
-  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -69,9 +67,7 @@ export const NavLink = styled.a`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
-  }
-  @media screen and (max-width: 768px) {
-    display: none;
+    display: none;  
   }
 `;
 
