@@ -8,9 +8,9 @@ const Projects = () => (
   <Section nopadding id="projects">
     <SectionTitle main >Projets</SectionTitle>
     <SectionText>
-        Salut je m'appelle Paul Benetier et on va créer une timeline ensemble.
+        IN COMING SOON. 
     </SectionText>
-    <GridContainer>
+    {/* <GridContainer>
       {projects.map(({ id, image, title, description, tags, source, visit }) =>(
         <BlogCard key={id}>
           <Img src={image}></Img>
@@ -33,7 +33,7 @@ const Projects = () => (
           </UtilityList>
         </BlogCard>
       ))}
-    </GridContainer>
+    </GridContainer> */}
     <SectionDivider/>
 
   </Section>

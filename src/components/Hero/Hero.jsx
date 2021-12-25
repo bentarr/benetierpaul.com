@@ -6,17 +6,15 @@ import Projects from '../Projects/Projects';
 import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
-  <Section row nopadding>
-    <LeftSection>
+  <Section nopadding>
       <SectionTitle main center>
-        Bienvenue sur <br/>
-        Mon Site 
+        paulBen - <br/>
+        intégrateur et développeur web 
       </SectionTitle>
       <SectionText>
         Le but de mon site est de montrer mes différentes réalisations et ainsi de vous proposer mes services dans vos projets de création sur Internet. 
       </SectionText>
       <Button onClick={() => window.location ='#projects'}>En voir plus</Button>
-    </LeftSection>
   </Section>
 );
 
