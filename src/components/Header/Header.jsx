@@ -27,6 +27,11 @@ const Header = () => (
         </Link>
       </li>
       <li>
+        <Link href="#pricing">
+          <NavLink> Tarifs </NavLink>
+        </Link>
+      </li>
+      <li>
         <Link href="#contact">
           <NavLink> Contact </NavLink>
         </Link>
