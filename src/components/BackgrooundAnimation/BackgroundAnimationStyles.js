@@ -7,5 +7,8 @@ export const DivAnimation = styled.div`
         display: flex; 
         right: -5rem;
         top: 5.5rem;
+        @media only Screen and (max-width: 40em) {
+            display: none;
+         }
     }
 `;

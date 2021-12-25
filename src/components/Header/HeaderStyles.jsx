@@ -1,5 +1,6 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
+import { FaBars } from 'react-icons/fa';
 
 // Le Container contient le template de la grille du site
 // Chaque style de Div ensuite déclarés ont la propriétés grid-area qui gère leurs positions
@@ -45,6 +46,9 @@ export const Div3 = styled.div`
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 // Span
@@ -65,6 +69,9 @@ export const NavLink = styled.a`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -128,3 +135,17 @@ margin-top: -8px;
     cursor: pointer;
   }
 `
+
+export const Bars = styled(FaBars)`
+  display: none;
+  color: #fff;
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+`;
